@@ -119,14 +119,30 @@
                     <div class="modal-header">
                         <h5 class="modal-title">Login</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        </button>                   
+                        </button>
                     </div>
                     <div class="modal-body">
-                        <p>Formulario para segunda</p>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <div class="input-group"><span class="input-group-text"><i
+                                        class="bi bi-envelope"></i></span>
+                                <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com">
+                            </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <div class="input-group"><span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                <input type="password" id="senha" class="form-control">
+                            </div>
+                        </div>
+                        <div id="mensagemErro" class="alert alert-danger d-none">Email ou senha incorretos</div>
                     </div>
                     <div class="modal-footer">
-                        <button> segunda</button>
-                        <button>segunda</button>
+                        <button type="button" class="btn btn-secondary">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Entrar</button>
                     </div>
                 </form>
             </div>
