@@ -113,41 +113,88 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="false">
-        <div class="modal-dialog">
-            <div class="modal-content">
+   
+    <div class="modal fade" id="modalLogin" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+    
+            <div class="modal-content shadow">
+    
                 <form id="formLogin">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+    
+                    <!-- HEADER NO PADRÃO DO SITE -->
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title">
+                            <i class="bi bi-person-circle me-2"></i>
+                            Entrar
+                        </h5>
+    
+                        <button type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="modal">
                         </button>
                     </div>
+    
+                    <!-- BODY -->
                     <div class="modal-body">
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label">E-mail</label>
-                            <div class="input-group"><span class="input-group-text"><i
-                                        class="bi bi-envelope"></i></span>
-                                <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com">
-                            </div>
+    
+                        <label class="form-label">E-mail</label>
+    
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+    
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Digite seu e-mail"
+                                   id="email">
                         </div>
-
-
-                        <div class="mb-3">
-                            <label for="senha" class="form-label">Senha</label>
-                            <div class="input-group"><span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                <input type="password" id="senha" class="form-control">
-                            </div>
+    
+    
+                        <label class="form-label">Senha</label>
+    
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-lock"></i>
+                            </span>
+    
+                            <input type="password"
+                                   class="form-control"
+                                   placeholder="Digite sua senha"
+                                   id="senha">
                         </div>
-                        <div id="mensagemErro" class="alert alert-danger d-none">Email ou senha incorretos</div>
+    
+                        <!-- ALERTA (igual padrão Bootstrap do resto do site) -->
+                        <div id="mensagemErro"
+                             class="alert alert-danger mt-3 d-none">
+                            Email ou senha inválidos
+                        </div>
+    
                     </div>
+    
+                    <!-- FOOTER PADRÃO DO SITE -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Entrar</button>
+    
+                        <button type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Cancelar
+                        </button>
+    
+                        <button type="submit"
+                                class="btn btn-warning fw-bold">
+                            Entrar
+                        </button>
+    
                     </div>
+    
                 </form>
+    
             </div>
+    
         </div>
+    
     </div>
 
 
