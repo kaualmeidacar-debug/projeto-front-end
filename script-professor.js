@@ -16,6 +16,34 @@ formProf.addEventListener('submit', function (evento) {
     nomeProf.classList.add("is-valid");
     nomeProf.classList.remove("is-invalid");
   }
+  // Descrição
+  if (registro.value.trim() == "") {
+    registro.classList.add("is-invalid");
+    registro.classList.remove("is-valid");
+    formularioValido = false;
+} else {
+    registro.classList.add("is-valid");
+    registro.classList.remove("is-invalid");
+}
+
+// Carga Horária
+if (funcaoAula.value <= 0) {
+    funcaoAula.classList.add("is-invalid");
+    funcaoAula.classList.remove("is-valid");
+    formularioValido = false;
+} else {
+    funcaoAula.classList.add("is-valid");
+    funcaoAula.classList.remove("is-invalid");
+}
+
+if (formularioValido) {
+    alert("Curso cadastrado com sucesso!");
+    formCurso.reset();
+
+    nomeCurso.classList.remove("is-valid");
+    descricaoCurso.classList.remove("is-valid");
+    chCurso.classList.remove("is-valid");
+}
 
 
   
